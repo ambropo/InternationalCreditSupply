@@ -1,0 +1,20 @@
+
+\documentclass{article}
+
+\begin{document}
+
+\section*{Read Me}
+
+\noindent This repository includes the codes to replicate the baseline VAR and the theoretical model in A. Cesa-Bianchi, A. Ferrero, and A. Rebucci (2018) "International Credit Supply Shocks," published in the the \textit{Journal of International Economics}. 
+
+\section*{VAR}
+To replicate the VAR results run \texttt{VAR$\backslash$GO\_CFR\_PVAR.m}. The code runs the two routines:
+\begin{itemize}
+	\item \texttt{GO0\_Data.m}: reads from \texttt{CodeVar.xls} and \texttt{DataQ\_57C.xls} to create the data used for the estimation. 
+	\item \texttt{GO1\_VAR.m}: estimates the country VARs, computes the impulse response functions, and exports charts and tables, stored in the folder \texttt{../OUT}.
+\end{itemize}
+
+\section*{Theoretical Model}
+To replicate the results from the theoretical model run \texttt{Model$\backslash$GO\_CFR\_Model.m}. 
+
+\end{document}
